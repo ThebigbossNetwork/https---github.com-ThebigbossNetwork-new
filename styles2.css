@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+[class ^="box-"] {
+    display: grid;
+    place-items: center;
+    border: solid 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    color: #FFF;
+  }
+ 
+  body{
+    background: #05014a;
+    height: 100vh;
+  }
+.column{
+    height: 90vh;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas: 
+    
+    
+    
+    "h h h h  h h h h  b b b b"
+    "h h h h  h h h h  b b b b"
+    "h h h h  h h h h  b b b b"
+    "h h h h  h h h h  b b b b"
+    "h h h h  h h h h  b b b b"
+    "h h h h  h h h h  b b b b"
+    "m m m m  m m  s s  s s s s"
+    "m m m m  m m  s s  s s s s"
+    "m m m m  m m  f f  f f f f"
+    "m m m m  m m  f f  f f f f"
+    "m m m m  m m  f f  f f f f";
+}
+.column .box-1{
+    grid-area: h;
+    background: red;
+    border: 0;
+} 
+.column .box-2{
+    grid-area: b;
+    background: orange;
+    border: 0;
+} 
+.column .box-3{
+    grid-area: m;
+    background: green;
+    border: 0;
+} 
+.column .box-4{
+    grid-area: s;
+    background: 	#03a9f4;
+    border: 0;
+} 
+.column .box-5{
+    grid-area: f;
+    background: 	#03a9f4;
+    border: 0;
+} 
+.logo{
+    text-decoration: none;
+     border: 0;
+     border-radius: 30px;
+     outline: none;
+     font-size: 25px;
+     cursor: pointer;
+     font-family: 'Lexend Deca', sans-serif;
+     font-weight: 700;
+     color: hsl(31, 77%, 52%);
+     padding: 2px;
+     margin-bottom: 10px;
+}
